@@ -2,7 +2,16 @@ NAME
     Device::Hue - Perl module for the Philips Hue light system
 
 VERSION
-    version 0.4
+    version 0.5
+
+DESCRIPTION
+    A perl module to interface Philips Hue devices. See http://meethue.com
+
+    To use the examples in the examples folder, please configure the
+    environment appropriately:
+
+    export HUE_BRIDGE="http://192.168.1.123" =item export
+    HUE_KEY="7c1590fb6089be2129260acb2df53372"
 
 AUTHOR
     Alessandro Zummo <a.zummo@towertech.it>

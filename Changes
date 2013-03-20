@@ -3,8 +3,35 @@ Changes from 2012-03-20 00:00:00 +0000 to present.
 ==================================================
 
 ----------------------------------------
-version 0.4 at 2013-03-20 13:30:34 +0000
+version 0.5 at 2013-03-20 19:47:00 +0000
 ----------------------------------------
+
+  Change: 832f6898d014fe581b8b745dafb5a484c3b654b0
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-03-20 20:45:47 +0000
+
+    Added minimal documentation in POD format, bumped version number to
+    0.5 
+
+  Change: 4f710c724a7ded5e52c91205d6ce858949ebcc4b
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-03-20 20:26:50 +0000
+
+    Added missing dependency.
+
+    The LWP::Protocol::https module depency was missing. If it is not
+    installed the https GET request to www.meethue.com fails in the nupnp
+    function. 
+
+  Change: 5b2bc95e19ac1c0fdc32777496632561739071cb
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-03-20 20:24:33 +0000
+
+    Simplify the discovery script.
+
+    Ensure the script works also when the HUE_BRIDGE and HUE_KEY are not
+    set. Since we're trying to discover the bridge IP we cannot set is
+    before we run this script. 
 
   Change: e9f0341297a9be0e8dfe6dc723f45d1e3cb2a703
   Author: Lieven Hollevoet <hollie@lika.be>
@@ -32,6 +59,89 @@ version 0.4 at 2013-03-20 13:30:34 +0000
 
     Re-arranged the folder structure Changed the module name to
     Device-Hue 
+
+  Change: 75ab81bf93b1726668e0d3551b7380fdbc32cc46
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-25 02:13:43 +0000
+
+    bumped version to 0.3 
+
+  Change: 55e142928a312d58a045f4ea719c9f9c65b876e0
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-25 02:11:41 +0000
+
+    code cleanup 
+
+  Change: e8b8ddc6fe82daa2776a345ffef1f5b61cfe2a21
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-25 02:05:47 +0000
+
+    added local discovery via UPnP added remote discovery via Philips
+    portal 
+
+  Change: ad1924b78a36575591d18c8af24c266298291320
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-25 00:42:06 +0000
+
+    added light attributes and one more example 
+
+  Change: b63cf8482cb90d69f53911c3e9ed76574d9d7f78
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-23 16:16:09 +0000
+
+    added remote discovery 
+
+  Change: 35eb8c709bf1f0ab404cfafacf786e0d8eefafce
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-23 16:11:21 +0000
+
+    improved error handling 
+
+  Change: 1b88047f15294b9b240f7a3e9946745cc27457d9
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-23 16:08:19 +0000
+
+    added some debugging support 
+
+  Change: 2819924bcc16f3033207e0379ee857df1ba228f9
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-23 16:02:28 +0000
+
+    replaced Moose with Moo 
+
+  Change: a9cc99b55fc8109b444633e8f9593d8226f2aa2e
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-21 22:44:34 +0000
+
+    added files 
+
+  Change: 9ef1664bf3fbd3b097e6dce5681c740d36e12c82
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-21 22:43:50 +0000
+
+    fixed redundant entry 
+
+  Change: f58454d4d7973b30f3f20f04f757ccd0156c7a54
+  Author: Alessandro Zummo <a.zummo@towertech.it>
+  Date : 2013-01-21 22:24:33 +0000
+
+    Initial import 
+
+  Change: ec37cef75d2c0df199ffebdc4905a4f9c8616524
+  Author: dwery <azummo-github@towertech.it>
+  Date : 2013-01-21 09:28:29 +0000
+
+    Initial commit 
+
+----------------------------------------
+version 0.4 at 2013-03-20 13:30:42 +0000
+----------------------------------------
+
+  Change: f303ef1c3cfbdba1a8e84db42d162d00c06fac7e
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-03-20 14:30:42 +0000
+
+    Build results of e9f0341 (on master) 
 
 ----------------------------------------
 version 0.3 at 2013-01-25 01:13:43 +0000

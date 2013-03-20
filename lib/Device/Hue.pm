@@ -2,7 +2,7 @@ use strict;
 
 package Device::Hue;
 {
-  $Device::Hue::VERSION = '0.4';
+  $Device::Hue::VERSION = '0.5';
 }
 
 use warnings;
@@ -19,6 +19,8 @@ use Device::Hue::UPnP;
 use Device::Hue::Light;
 
 use LWP::UserAgent;
+use LWP::Protocol::https;
+
 use JSON::XS;
 
 use Data::Dumper;
@@ -62,7 +64,9 @@ sub process
 			if $self->debug;
 
 		return decode_json($res->decoded_content);
-	} 
+	}  else {
+		say "Request failed: " . $res->status_line if $self->debug;
+	}
 	
 	return;
 }
@@ -71,6 +75,8 @@ sub get
 {
 	my ($self, $uri) = @_;
 
+	say "GET $uri" if $self->debug;
+	
 	my $req = HTTP::Request->new('GET', $uri);
 
 	$req->content_type('application/json');
@@ -178,7 +184,20 @@ Device::Hue - Perl module for the Philips Hue light system
 
 =head1 VERSION
 
-version 0.4
+version 0.5
+
+=head1 DESCRIPTION
+
+A perl module to interface Philips Hue devices. See http://meethue.com
+
+To use the examples in the examples folder, please configure the environment appropriately:
+
+=over
+
+=item export HUE_BRIDGE="http://192.168.1.123"
+=item export HUE_KEY="7c1590fb6089be2129260acb2df53372"
+
+=back
 
 =head1 AUTHOR
 

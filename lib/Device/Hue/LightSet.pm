@@ -1,6 +1,6 @@
 package Device::Hue::LightSet;
 {
-  $Device::Hue::LightSet::VERSION = '0.4';
+  $Device::Hue::LightSet::VERSION = '0.5';
 }
 
 use common::sense;
@@ -68,7 +68,7 @@ Device::Hue::LightSet
 
 =head1 VERSION
 
-version 0.4
+version 0.5
 
 =head1 AUTHOR
 

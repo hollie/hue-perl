@@ -27,6 +27,7 @@ my %WriteMakefileArgs = (
     "IO::Select" => 0,
     "IO::Socket::Multicast" => 0,
     "JSON::XS" => 0,
+    "LWP::Protocol::https" => 0,
     "LWP::UserAgent" => 0,
     "Moo" => 0,
     "base" => 0,
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     "vars" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.4",
+  "VERSION" => "0.5",
   "test" => {
     "TESTS" => "t/*.t"
   }
